@@ -16,7 +16,7 @@ export default function Home() {
     const chainId = parseInt(chainIdHex!);
     const proxyAddress = chainId in contractAddresses ? addresses[chainId][0] : null;
 
-    const { runContractFunction: getEntranceFee } = useWeb3Contract({
+    const { runContractFunction: getVersion } = useWeb3Contract({
         abi: abi,
         contractAddress: proxyAddress!,
         functionName: "getVersion",
@@ -24,7 +24,7 @@ export default function Home() {
     });
 
     const fetchVersion = async () => {
-        const result = ((await getEntranceFee()) as BigNumber).toString();
+        const result = ((await getVersion()) as BigNumber).toString();
         setVersion(result);
     };
 
