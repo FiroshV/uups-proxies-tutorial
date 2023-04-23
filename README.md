@@ -27,7 +27,7 @@ Below are the steps to run this tutorial with local hardhat node.
 15. Wait for the contract to be deployed.
 16. Once the contract is deployed, click on the `Check Version` button again.
 17. You should see the version of the contract as `2`.
-18. If you are trying to redloy the contracts, make sure to reset your Metamask account from advanced settings ![Reset account](https://github.com/FiroshV/uups-proxies-tutorial/blob/main/images/reset_account.png).
+18. If you are trying to redeploy the contracts, make sure to reset your Metamask account from advanced settings ![Reset account](https://github.com/FiroshV/uups-proxies-tutorial/blob/main/images/reset_account.png).
 
 ## TODO
 
